@@ -17,9 +17,7 @@ const Skills = () => {
               <img src="../assets/img/html.png" alt="" width={50} />
             </span>
             <span className="text-center ">
-              <p className="font-medium text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] ease-in-out duration-500">
-                HTML
-              </p>
+              <p className="font-medium">HTML</p>
               <p className="text-[var(--text-color-desc)] text-xs font-normal">
                 Intermediate
               </p>
@@ -30,9 +28,7 @@ const Skills = () => {
               <img src="../assets/img/css.png" alt="" width={50} />
             </span>
             <span className="text-center">
-              <p className="font-medium text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] ease-in-out duration-500">
-                CSS
-              </p>
+              <p className="font-medium">CSS</p>
               <p className="text-[var(--text-color-desc)] text-xs font-normal">
                 Intermediate
               </p>
@@ -43,9 +39,7 @@ const Skills = () => {
               <img src="../assets/img/javascript.png" alt="" width={50} />
             </span>
             <span className="text-center">
-              <p className="font-medium text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] ease-in-out duration-500">
-                JavaScript
-              </p>
+              <p className="font-medium">JavaScript</p>
               <p className="text-[var(--text-color-desc)] text-xs font-normal">
                 Intermediate
               </p>
@@ -56,9 +50,7 @@ const Skills = () => {
               <img src="../assets/img/react.png" alt="" width={50} />
             </span>
             <span className="text-center">
-              <p className="font-medium text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] ease-in-out duration-500">
-                React
-              </p>
+              <p className="font-medium">React</p>
               <p className="text-[var(--text-color-desc)] text-xs font-normal">
                 Basic
               </p>
@@ -69,9 +61,7 @@ const Skills = () => {
               <img src="../assets/img/bootstrap.png" alt="" width={50} />
             </span>
             <span className="text-center">
-              <p className="font-medium text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] ease-in-out duration-500">
-                Bootstrap
-              </p>
+              <p className="font-medium">Bootstrap</p>
               <p className="text-[var(--text-color-desc)] text-xs font-normal">
                 Intermediate
               </p>
@@ -82,9 +72,7 @@ const Skills = () => {
               <img src="../assets/img/tailwind.png" alt="" width={50} />
             </span>
             <span className="text-center">
-              <p className="font-medium text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] ease-in-out duration-500">
-                Tailwind CSS
-              </p>
+              <p className="font-medium">Tailwind CSS</p>
               <p className="text-[var(--text-color-desc)] text-xs font-normal">
                 Intermediate
               </p>
@@ -100,9 +88,7 @@ const Skills = () => {
               />
             </span>
             <span className="text-center">
-              <p className="font-medium text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] ease-in-out duration-500">
-                Github
-              </p>
+              <p className="font-medium">Github</p>
               <p className="text-[var(--text-color-desc)] text-xs font-normal">
                 Basic
               </p>

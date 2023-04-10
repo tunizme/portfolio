@@ -88,10 +88,8 @@ const Contact = () => {
             className="grid grid-cols-1 pt-10 gap-10"
           >
             <div className="relative">
-              <label
-                htmlFor=""
-                className="absolute p-2 bg-white dark:bg-[var(--color-bg-dark)] text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] ease-in-out duration-500 top-[-20px] left-5"
-              >
+              <div className="absolute h-6 w-16 bg-[#fff] dark:bg-[--color-bg-dark] top-[-12px] left-5 transition-all duration-500 "></div>
+              <label htmlFor="" className="absolute top-[-12px] left-7">
                 Name
               </label>
               <input
@@ -102,10 +100,8 @@ const Contact = () => {
               />
             </div>
             <div className="relative">
-              <label
-                htmlFor=""
-                className="absolute p-2 bg-white dark:bg-[var(--color-bg-dark)] text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] ease-in-out duration-500 top-[-20px] left-5"
-              >
+              <div className="absolute h-6 w-14 bg-[#fff] dark:bg-[--color-bg-dark] top-[-12px] left-5 transition-all duration-500 "></div>
+              <label htmlFor="" className="absolute top-[-12px] left-7">
                 Email
               </label>
               <input
@@ -116,10 +112,8 @@ const Contact = () => {
               />
             </div>
             <div className="relative">
-              <label
-                htmlFor=""
-                className="absolute p-2 bg-white dark:bg-[var(--color-bg-dark)] text-[var(--text-color-light)] dark:text-[var(--text-color-dark)] ease-in-out duration-500 top-[-20px] left-5"
-              >
+              <div className="absolute h-6 w-32 bg-[#fff] dark:bg-[--color-bg-dark] top-[-12px] left-5 transition-all duration-500 "></div>
+              <label htmlFor="" className="absolute top-[-12px] left-7">
                 Your message
               </label>
               <textarea

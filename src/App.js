@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -14,15 +14,18 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
   const toggleDarkMode = () => {
     setDarkMode((pre) => !pre);
+    setTimeout(() => {
+      document.documentElement.setAttribute(
+        "data-color-scheme",
+        darkMode ? "" : "dark"
+      );
+    }, 130);
   };
+
   return (
-    <div
-      className={`App transition-all ease-in-out duration-500 ${
-        darkMode ? "dark" : ""
-      }`}
-    >
-      <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+    <div className={`App  ${darkMode ? "dark" : ""}`}>
       <Main>
+        <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
         <Home />
         <About />
         <Skills />
