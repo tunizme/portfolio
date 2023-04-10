@@ -4,7 +4,7 @@ const Project = () => {
   return (
     <div
       id="project"
-      className="w-11/12 m-auto pt-40 pb-20 border-black dark:border-[var(--text-color-dark)] border-b-[1px]"
+      className="w-11/12 m-auto pt-40 pb-20 border-[var(--border-color)] border-b-[1px]"
     >
       <h1 className="text-center font-bold text-4xl">Projects</h1>
       <p className="text-center font-normal text-sm pt-2 text-[var(--text-color-desc)]">

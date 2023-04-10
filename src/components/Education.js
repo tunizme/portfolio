@@ -4,7 +4,7 @@ const Education = () => {
   return (
     <div
       id="education"
-      className="w-9/12 m-auto pt-40 pb-20 border-black dark:border-[--text-color-dark] border-b-[1px]"
+      className="md:w-9/12 w-11/12 m-auto pt-40 pb-20 border-[var(--border-color)] border-b-[1px]"
     >
       <h1 className="text-center font-bold text-4xl">Education</h1>
       <p className="text-center font-normal text-sm text-[var(--text-color-desc)]">

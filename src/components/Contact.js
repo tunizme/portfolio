@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-9/12 m-auto pt-40 pb-20 ">
+    <div id="contact" className="md:w-9/12 w-11/12 m-auto pt-40 pb-20 ">
       <h1 className="text-center font-bold text-4xl">Contact</h1>
       <p className="text-center font-normal text-sm text-[var(--text-color-desc)]">
         Get in touch

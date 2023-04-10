@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedinIn, FaGithub, FaFacebookF } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="w-full m-auto h-[60px] border-t-[1px] flex items-center justify-center">
+    <div className="w-full m-auto h-[60px] border-t-[1px] border-[var(--border-color)] flex items-center justify-center">
       {/* <div className="flex items-center justify-center gap-4">
         <a
           href="https://www.linkedin.com/in/tr%E1%BA%A7n-anh-v%C5%A9-b18aab264/"
