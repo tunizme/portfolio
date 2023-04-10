@@ -4,7 +4,7 @@ const Project = () => {
   return (
     <div
       id="project"
-      className="w-11/12 m-auto pt-40 pb-20 border-[var(--border-color)] border-b-[1px]"
+      className="w-11/12 m-auto md:pt-40 pt-[80px] pb-20 border-[var(--border-color)] border-b-[1px]"
     >
       <h1 className="text-center font-bold text-4xl">Projects</h1>
       <p className="text-center font-normal text-sm pt-2 text-[var(--text-color-desc)]">
@@ -198,7 +198,7 @@ const Project = () => {
           <div className="grid lg:grid-cols-5 grid-cols-1  lg:flex-row overflow-hidden rounded-lg items-center lg:gap-10 lg:p-8  shadow-zinc-500 dark:shadow-gray-400 shadow-lg">
             <div className="h-full w-full col-span-3 lg:rounded-lg overflow-hidden">
               <a
-                href="https://lofi-app-chi.vercel.app"
+                href="https://portfolio-tunizme.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -243,16 +243,6 @@ const Project = () => {
                 >
                   <div className="p-2 border-[1px] rounded-md border-[var(--color-bg-dark)] dark:border-[var(--color-text-dark)] dark:hover:bg-[var(--text-color-dark)] dark:hover:text-[var(--text-color-light)] hover:bg-[var(--text-color-light)] hover:text-[var(--text-color-dark)]">
                     View source
-                  </div>
-                </a>
-                <a
-                  href="https://lofi-app-chi.vercel.app"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-block"
-                >
-                  <div className="p-2 border-[1px] rounded-md border-[var(--color-bg-dark)] dark:border-[var(--color-text-dark)] dark:hover:bg-[var(--text-color-dark)] dark:hover:text-[var(--text-color-light)] hover:bg-[var(--text-color-light)] hover:text-[var(--text-color-dark)]">
-                    Visit Website
                   </div>
                 </a>
               </div>
