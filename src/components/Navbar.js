@@ -1,10 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { FiSun, FiMoon } from "react-icons/fi";
-import { HiOutlineHome } from "react-icons/hi";
+import { FiSun, FiMoon, FiBookOpen } from "react-icons/fi";
+import { HiOutlineHome, HiMenuAlt1 } from "react-icons/hi";
+import {
+  AiOutlineUser,
+  AiOutlineFire,
+  AiOutlineProject,
+  AiOutlineContacts,
+  AiOutlineClose,
+} from "react-icons/ai";
 const Navbar = (props) => {
   const [shadow, setShadow] = useState(false);
-
+  const [menu, setMenu] = useState(false);
+  const handleSetMenu = () => {
+    if (menu) setMenu(false);
+    else setMenu(true);
+  };
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -15,7 +26,7 @@ const Navbar = (props) => {
     };
     window.addEventListener("scroll", handleShadow);
   }, []);
-
+  console.log(menu);
   return (
     <>
       <div
@@ -95,36 +106,96 @@ const Navbar = (props) => {
           </div>
         </div>
       </div>
-      <div className="fixed lg:hidden h-16 w-[360px] right-0 left-0 bottom-8 m-auto bg-red-700 z-[100] rounded-full">
-        <div className="flex w-full h-full items-center justify-center">
-          <Link
-            activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
-            spy
-            to="home"
+      <div className="fixed lg:hidden w-[340px] right-0 left-0 bottom-8 m-auto bg-[#0000004d] backdrop-blur-[15px] z-[100] rounded-full">
+        <div className="w-full h-16 flex items-center justify-center">
+          <div
+            className={`${
+              menu ? "hidden" : "flex"
+            } w-full justify-between px-8`}
           >
-            <HiOutlineHome size={30} />
-          </Link>
-          <Link
-            activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
-            spy
-            to="about"
+            <Link
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              spy
+              to="home"
+              className="text-[--text-color-light] cursor-pointer"
+            >
+              <HiOutlineHome size={25} />
+            </Link>
+            <div className="flex gap-4">
+              <span
+                className={`flex items-center cursor-pointer ${
+                  props.darkMode
+                    ? "hover:text-[var(--text-color-dark)]"
+                    : "hover:text-[var(--text-color-light)]"
+                } `}
+                onClick={props.toggleDarkMode}
+              >
+                {props.darkMode ? <FiSun size={25} /> : <FiMoon size={25} />}
+              </span>
+              <span
+                className={`flex items-center cursor-pointer ${
+                  props.darkMode
+                    ? "hover:text-[var(--text-color-dark)]"
+                    : "hover:text-[var(--text-color-light)]"
+                } `}
+                onClick={handleSetMenu}
+              >
+                <HiMenuAlt1 size={25} />
+              </span>
+            </div>
+          </div>
+          <div
+            className={`${
+              menu ? "flex" : "hidden"
+            } w-full justify-between px-8  relative`}
           >
-            <HiOutlineHome size={30} />
-          </Link>
-          <Link
-            activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
-            spy
-            to="skills"
-          >
-            <HiOutlineHome size={30} />
-          </Link>
-          <Link
-            activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
-            spy
-            to="education"
-          >
-            <HiOutlineHome size={30} />
-          </Link>
+            <div
+              className="absolute p-1 rounded-full bg-[#0000009d]  top-[-34px] right-[30px]"
+              onClick={handleSetMenu}
+            >
+              <AiOutlineClose size={20} />
+            </div>
+            <Link
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              spy
+              to="about"
+              className="text-[--text-color-light] cursor-pointer"
+            >
+              <AiOutlineUser size={25} />
+            </Link>
+            <Link
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              spy
+              to="skills"
+              className="text-[--text-color-light] cursor-pointer"
+            >
+              <AiOutlineFire size={25} />
+            </Link>
+            <Link
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              spy
+              to="education"
+              className="text-[--text-color-light] cursor-pointer"
+            >
+              <FiBookOpen size={20} />
+            </Link>
+            <Link
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              spy
+              to="projects"
+              className="text-[--text-color-light] cursor-pointer"
+            >
+              <AiOutlineProject size={25} />
+            </Link>
+            <Link
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              spy
+              to="contact"
+              className="text-[--text-color-light] cursor-pointer"
+            >
+              <AiOutlineContacts size={25} />
+            </Link>
+          </div>
         </div>
       </div>
     </>
