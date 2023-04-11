@@ -3,7 +3,7 @@ import { BsArrowBarRight } from "react-icons/bs";
 const Project = () => {
   return (
     <div
-      id="project"
+      id="projects"
       className="w-11/12 m-auto md:pt-40 pt-[80px] pb-20 border-[var(--border-color)] border-b-[1px]"
     >
       <h1 className="text-center font-bold text-4xl">Projects</h1>
