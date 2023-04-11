@@ -11,7 +11,11 @@ import Skills from "./components/Skills";
 import Main from "./components/Main";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(
+    JSON.parse(localStorage.getItem("darkMode"))
+      ? JSON.parse(localStorage.getItem("darkMode"))
+      : false
+  );
   const toggleDarkMode = () => {
     setDarkMode((pre) => !pre);
     setTimeout(() => {
@@ -21,6 +25,13 @@ function App() {
       );
     }, 130);
   };
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+    if (darkMode) {
+      document.documentElement.setAttribute("data-color-scheme", "dark");
+    }
+  }, [darkMode]);
 
   return (
     <div className={`App ${darkMode ? "dark" : ""}`}>

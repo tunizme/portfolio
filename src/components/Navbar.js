@@ -13,8 +13,7 @@ const Navbar = (props) => {
   const [shadow, setShadow] = useState(false);
   const [menu, setMenu] = useState(false);
   const handleSetMenu = () => {
-    if (menu) setMenu(false);
-    else setMenu(true);
+    setMenu((pre) => !pre);
   };
   useEffect(() => {
     const handleShadow = () => {
@@ -26,7 +25,6 @@ const Navbar = (props) => {
     };
     window.addEventListener("scroll", handleShadow);
   }, []);
-  console.log(menu);
   return (
     <>
       <div
@@ -40,7 +38,7 @@ const Navbar = (props) => {
           </Link>
           <div className="hidden md:flex text-[var(--text-color-desc)]">
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] duration-75 ease-in-out"
               spy
               offset={-80}
               to="home"
@@ -49,7 +47,7 @@ const Navbar = (props) => {
               Home
             </Link>
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] duration-75 ease-in-out"
               spy
               offset={-80}
               to="about"
@@ -58,7 +56,7 @@ const Navbar = (props) => {
               About
             </Link>
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] duration-75 ease-in-out"
               spy
               offset={-80}
               to="skills"
@@ -67,7 +65,7 @@ const Navbar = (props) => {
               Skills
             </Link>
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] duration-75 ease-in-out"
               spy
               offset={-80}
               to="education"
@@ -76,7 +74,7 @@ const Navbar = (props) => {
               Education
             </Link>
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] duration-75 ease-in-out"
               spy
               offset={-80}
               to="projects"
@@ -85,7 +83,7 @@ const Navbar = (props) => {
               Projects
             </Link>
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
+              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] duration-75 ease-in-out"
               spy
               offset={-80}
               to="contact"
@@ -114,84 +112,70 @@ const Navbar = (props) => {
             } w-full justify-between px-8`}
           >
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
               spy
               to="home"
-              className="text-[--text-color-light] cursor-pointer"
+              className="text-[--text-color-dark] cursor-pointer"
             >
               <HiOutlineHome size={25} />
             </Link>
             <div className="flex gap-4">
               <span
-                className={`flex items-center cursor-pointer ${
-                  props.darkMode
-                    ? "hover:text-[var(--text-color-dark)]"
-                    : "hover:text-[var(--text-color-light)]"
-                } `}
+                className="flex items-center cursor-pointer text-[--color-text-dark]"
                 onClick={props.toggleDarkMode}
               >
                 {props.darkMode ? <FiSun size={25} /> : <FiMoon size={25} />}
               </span>
               <span
-                className={`flex items-center cursor-pointer ${
-                  props.darkMode
-                    ? "hover:text-[var(--text-color-dark)]"
-                    : "hover:text-[var(--text-color-light)]"
-                } `}
+                className="flex items-center cursor-pointer"
                 onClick={handleSetMenu}
               >
-                <HiMenuAlt1 size={25} />
+                <HiMenuAlt1 size={25} color="var(--text-color-dark)" />
               </span>
             </div>
           </div>
           <div
             className={`${
               menu ? "flex" : "hidden"
-            } w-full justify-between px-8  relative`}
+            } w-full justify-between px-8 relative`}
           >
             <div
-              className="absolute p-1 rounded-full bg-[#0000009d]  top-[-34px] right-[30px]"
+              className="absolute p-1 rounded-full bg-[#000000]  top-[-24px] right-0"
               onClick={handleSetMenu}
             >
-              <AiOutlineClose size={20} />
+              <AiOutlineClose size={15} color="var(--text-color-dark)" />
             </div>
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
               spy
               to="about"
-              className="text-[--text-color-light] cursor-pointer"
+              className="text-[--text-color-dark] cursor-pointer"
             >
               <AiOutlineUser size={25} />
             </Link>
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
               spy
               to="skills"
-              className="text-[--text-color-light] cursor-pointer"
+              className="text-[--text-color-dark] cursor-pointer"
             >
               <AiOutlineFire size={25} />
             </Link>
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
               spy
               to="education"
-              className="text-[--text-color-light] cursor-pointer"
+              className="text-[--text-color-dark] cursor-pointer"
             >
-              <FiBookOpen size={20} />
+              <FiBookOpen size={25} />
             </Link>
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
               spy
               to="projects"
-              className="text-[--text-color-light] cursor-pointer"
+              className="text-[--text-color-dark] cursor-pointer"
             >
               <AiOutlineProject size={25} />
             </Link>
             <Link
-              activeClass="text-[--text-color-light] dark:text-[--text-color-dark] font-medium"
               spy
               to="contact"
-              className="text-[--text-color-light] cursor-pointer"
+              className="text-[--text-color-dark] cursor-pointer"
             >
               <AiOutlineContacts size={25} />
             </Link>
