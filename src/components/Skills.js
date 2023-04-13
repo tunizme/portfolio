@@ -11,7 +11,7 @@ const Skills = () => {
         What I Can Do
       </p>
       <div className="flex items-center justify-center pt-20">
-        <div className="grid md:grid-cols-4 grid-cols-2 gap-20">
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 gap-20">
           <div className="flex flex-col justify-center w-[104px] items-center gap-3">
             <span className="w-[84px] h-[106px] flex items-center justify-center rounded-full bg-[#f2f2f3] dark:bg-[var(--container-color)] duration-500 ease-in-out transition-all">
               <img src="../assets/img/html.png" alt="" width={50} />
