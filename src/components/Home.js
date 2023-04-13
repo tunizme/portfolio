@@ -21,7 +21,7 @@ const Home = () => {
           <div className="w-[250px] h-[250px] rounded-full overflow-hidden">
             <img
               className="object-cover"
-              src="https://lh3.googleusercontent.com/s3OkfCc07BzzsYlKsp8-5dfvZkV1rsDuJOE5AFwcmVHzQ_INN3tqJYEAGMDoDalSi1YfJ587YKf1L-H3r7hNGyhckkzx1YcHME1NWLAzjWoClFrd4gxDhsct2v03Csvc0Xd8bAx1AZZF2PWmA71YD9sSLw_qjO_zTQRQ5S1lrvJyecxcqHK0sM7uH6Bauk52ZfLnRZ6LljwwmA3z1UVVeNLWDNQ4QU13sFnqhuB7HA8FYT7hGsM03ZogC2ctxhnJPn8E1o1Pt89hfp-u9w7xaAL8_ATIXQxjyUpgpm97Vh7cR_8VGdB7JNREHMk99l6UT4FG_wFJRpJdpR2q9Wi74dPCkGiKlPFNmHAh-c3fTw-KIMIR0W_m7e9XlzMA7B7086pvwXj4NSq9hDmuVWKkypmH2ZdhT1dK5b3MuIpWkTVzdx8z-c9CYl9_UDXeSCfa_EUJlubWUMcww7qOkcg_4E7xusU9B9cjAh_Sd219E8E4hahHJet_-nOSvy0oxlEBMtaa7oGW2MsC1Cvavj1GMDzXCbwoGtieI5aR-IxaVthD4eieBVBH45Pci_jE0JzYV9mecJqhgMxQ7jVl0sRhSgBLN3ex1bFLishYa5tngvzf8CvlgKLTa2KlCePJIcAMG0NUfTZiYYzYHwVNCwYUpYpgbtZe9NivHUwh4mLVJhXVHKeZp_aTuajC8OSf17Qa1AJWA-WJV3Hh1YLLdV8-NBiZi4diSqOHQbuGnWwTaOjOXgXUnBQzjC4hY4FQ9zQxGcSYxymZLFvnlixM76lpVGJsqDDww6bYFoUTtwh4CndMao-Jzc5Hu8Lq4BXpjsciwYIMXiiNXOr6CmR9i1Gi2Zl5lRpaS7GFic8JNZwlWl0FzQeeilbVhK-N-Kk-YQBUdj2gzGBuC2DV1k6KiuLC4nNr3kmENkSXoRzwypusWJ72ojPL=w595-h893-s-no?authuser=0"
+              src="../assets/img/avatar.jpg"
               alt=""
             />
           </div>
