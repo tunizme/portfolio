@@ -5,16 +5,16 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="md:w-9/12 w-11/12 m-auto md:pt-[120px] pt-[80px] pb-20  border-[var(--border-color)] border-b-[1px]"
+      className="md:w-9/12 w-11/12 m-auto md:pt-[140px] pt-[80px] pb-40 border-[--border-color] border-b-[1px]"
     >
       <h3 className="text-center font-bold text-4xl">
-        Hi, I'm <strong className="text-cyan-500">Anh Vu</strong>
+        I'm <strong className="text-cyan-500">Anh Vu</strong>
       </h3>
       <h4 className="text-center font-semibold text-2xl pt-3">
         Welcome to my personal website!
       </h4>
       <p className="text-center font-medium text-xl pt-3 text-[var(--text-color-desc)]">
-        I want to be a Software Engineer
+        My Aim in Life to become Software Engineering
       </p>
       <div className="w-full flex pt-4 items-center justify-center">
         <div className="w-[300px] h-[300px] rounded-full border-2 border-gray-500 flex items-center justify-center">

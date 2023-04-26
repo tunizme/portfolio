@@ -4,7 +4,7 @@ const Project = () => {
   return (
     <div
       id="projects"
-      className="w-11/12 m-auto md:pt-40 pt-[80px] pb-20 border-[var(--border-color)] border-b-[1px]"
+      className="w-11/12 m-auto md:pt-40 pt-[80px] pb-40 border-[var(--border-color)] border-b-[1px]"
     >
       <h1 className="text-center font-bold text-4xl">Projects</h1>
       <p className="text-center font-normal text-sm pt-2 text-[var(--text-color-desc)]">
@@ -138,7 +138,7 @@ const Project = () => {
           <div className="grid lg:grid-cols-5 grid-cols-1  lg:flex-row overflow-hidden rounded-lg items-center lg:gap-10 lg:p-8 shadow-zinc-500 dark:shadow-gray-400 shadow-lg">
             <div className="h-full w-full col-span-3 lg:rounded-lg overflow-hidden">
               <a
-                href="https://e-commerce-tunizme.vercel.app/"
+                href="https://coffee-shop-7h03l5qlv-tunizme.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -151,8 +151,10 @@ const Project = () => {
             </div>
             <span className="flex flex-col justify-between col-span-2 h-full p-8 lg:p-0">
               <div className="flex flex-col">
-                <h1 className="text-center font-bold text-2xl">Shop</h1>
-                <h4 className="pt-5 text-base">I didn't do anything</h4>
+                <h1 className="text-center font-bold text-2xl">
+                  Coffee - Shop
+                </h1>
+                <h4 className="pt-5 text-base">A website I write for fun.</h4>
                 <p className="text-sm font-light text-[var(--text-color-desc)] pt-2">
                   2023 - Web development
                 </p>
@@ -167,13 +169,13 @@ const Project = () => {
                   </li>
                   <li className="flex items-center">
                     <BsArrowBarRight size={20} />
-                    <p className="ml-4 font-light">Bootstrap</p>
+                    <p className="ml-4 font-light">Tailwind CSS</p>
                   </li>
                 </ul>
               </div>
               <div className="flex gap-4 pt-8 justify-center">
                 <a
-                  href="https://github.com/tunizme/e-commerce"
+                  href="https://github.com/tunizme/coffee-shop"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-block"
@@ -183,7 +185,7 @@ const Project = () => {
                   </div>
                 </a>
                 <a
-                  href="https://e-commerce-tunizme.vercel.app/"
+                  href="https://coffee-shop-7h03l5qlv-tunizme.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-block"
