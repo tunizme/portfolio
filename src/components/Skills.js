@@ -58,6 +58,17 @@ const Skills = () => {
           </div>
           <div className="flex flex-col justify-center w-[104px] items-center gap-3">
             <span className="w-[84px] h-[106px] flex items-center justify-center rounded-full bg-[#f2f2f3] dark:bg-[var(--container-color)] duration-500 ease-in-out transition-all">
+              <img src="../assets/img/redux.png" alt="" width={50} />
+            </span>
+            <span className="text-center">
+              <p className="font-medium">Redux</p>
+              <p className="text-[var(--text-color-desc)] text-xs font-normal">
+                Basic
+              </p>
+            </span>
+          </div>
+          <div className="flex flex-col justify-center w-[104px] items-center gap-3">
+            <span className="w-[84px] h-[106px] flex items-center justify-center rounded-full bg-[#f2f2f3] dark:bg-[var(--container-color)] duration-500 ease-in-out transition-all">
               <img src="../assets/img/bootstrap.png" alt="" width={50} />
             </span>
             <span className="text-center">
