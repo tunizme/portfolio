@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="md:w-9/12 w-11/12 m-auto md:pt-[140px] pt-[80px] pb-40 border-[--border-color] border-b-[1px]"
+      className="h-screen md:w-9/12 w-11/12 m-auto md:pt-[140px] pt-[80px] border-[--border-color] border-b-[1px]"
     >
       <h3 className="text-center font-bold text-4xl">
         I'm <strong className="text-cyan-500">Anh Vu</strong>
