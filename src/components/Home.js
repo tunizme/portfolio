@@ -14,7 +14,7 @@ const Home = () => {
         Welcome to my personal website!
       </h4>
       <p className="text-center font-medium text-xl pt-3 text-[var(--text-color-desc)]">
-        My Aim in Life to become Software Engineering
+        My Aim in Life to become ...
       </p>
       <div className="w-full flex pt-4 items-center justify-center">
         <div className="w-[300px] h-[300px] rounded-full border-2 border-gray-500 flex items-center justify-center">
