@@ -14,8 +14,7 @@ const About = () => {
         <p className="tracking-widest text-center">
           My full name is Tran Anh Vu. I'm studying at Danang University of
           Science and Technology majoring in computer engineering. My future
-          direction is to become a ... developer with financial freedom and
-          connection expansion.
+          direction is to become xyz ...
         </p>
       </div>
     </div>

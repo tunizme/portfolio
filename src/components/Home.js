@@ -7,13 +7,14 @@ const Home = () => {
       id="home"
       className="h-screen md:w-9/12 w-11/12 m-auto md:pt-[140px] pt-[80px] border-[--border-color] border-b-[1px]"
     >
-      <h3 className="text-center font-bold text-4xl">
+      <h3 className="text-center font-bold text-4xl tracking-widest">
         I'm <strong className="text-cyan-500">Anh Vu</strong>
       </h3>
-      <h4 className="text-center font-semibold text-2xl pt-3">
-        Welcome to my personal website!
+      <h4 className="text-center font-medium text-2xl pt-3 tracking-wider">
+        {/* Welcome to my personal website! */}
+        Text ...
       </h4>
-      <p className="text-center font-medium text-xl pt-3 text-[var(--text-color-desc)]">
+      <p className="text-center font-medium text-xl pt-3 text-[var(--text-color-desc)] tracking-wider">
         My Aim in Life to become ...
       </p>
       <div className="w-full flex pt-4 items-center justify-center">
