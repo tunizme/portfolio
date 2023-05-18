@@ -11,11 +11,10 @@ const Home = () => {
         I'm <strong className="text-cyan-500">Anh Vu</strong>
       </h3>
       <h4 className="text-center font-medium text-2xl pt-3 tracking-wider">
-        {/* Welcome to my personal website! */}
-        Text ...
+        Welcome to my personal website!
       </h4>
       <p className="text-center font-medium text-xl pt-3 text-[var(--text-color-desc)] tracking-wider">
-        My Aim in Life to become ...
+        {/* My Aim in Life to become ... */}
       </p>
       <div className="w-full flex pt-4 items-center justify-center">
         <div className="w-[300px] h-[300px] rounded-full border-2 border-gray-500 flex items-center justify-center">
