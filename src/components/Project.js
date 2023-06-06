@@ -82,8 +82,7 @@ const Project = () => {
           <div className="grid grid-cols-1 gap-14">
             <div className="grid lg:grid-cols-5 grid-cols-1 lg:flex-row overflow-hidden rounded-lg items-center lg:gap-10 lg:p-8 shadow-zinc-500 dark:shadow-gray-400 shadow-lg">
               <div className="h-full w-full col-span-3 lg:rounded-lg overflow-hidden">
-                {/* <div onClick={() => handleModal(0)}> */}
-                <div>
+                <div onClick={() => handleModal(0)}>
                   <img
                     className="h-full object-fill hover:scale-105 ease-linear transform transition duration-100 cursor-pointer"
                     src="../assets/img/lofi.jpg"
@@ -129,11 +128,11 @@ const Project = () => {
                       View source
                     </div>
                   </a>
-                  {/* <div onClick={() => handleModal("demo")}>
+                  <div onClick={() => handleModal("demo")}>
                     <div className="p-2 border-[1px] rounded-md border-[var(--color-bg-dark)] dark:border-[var(--color-text-dark)] dark:hover:bg-[var(--text-color-dark)] dark:hover:text-[var(--text-color-light)] hover:bg-[var(--text-color-light)] hover:text-[var(--text-color-dark)]">
                       Video demo
                     </div>
-                  </div> */}
+                  </div>
                   <a
                     href="https://lofi-app-chi.vercel.app"
                     target="_blank"
@@ -149,8 +148,7 @@ const Project = () => {
             </div>
             <div className="grid lg:grid-cols-5 grid-cols-1  lg:flex-row overflow-hidden rounded-lg items-center lg:gap-10 lg:p-8 shadow-zinc-500 dark:shadow-gray-400 shadow-lg">
               <div className="h-full w-full col-span-3 lg:rounded-lg overflow-hidden">
-                {/* <div onClick={() => handleModal(1)}> */}
-                <div>
+                <div onClick={() => handleModal(1)}>
                   <img
                     className="h-full object-fill hover:scale-105 ease-linear transform transition duration-100 cursor-pointer"
                     src="../assets/img/todolist.jpg"
@@ -189,11 +187,11 @@ const Project = () => {
                       View source
                     </div>
                   </a>
-                  {/* <div onClick={() => handleModal("demo")}>
+                  <div onClick={() => handleModal("demo")}>
                     <div className="p-2 border-[1px] rounded-md border-[var(--color-bg-dark)] dark:border-[var(--color-text-dark)] dark:hover:bg-[var(--text-color-dark)] dark:hover:text-[var(--text-color-light)] hover:bg-[var(--text-color-light)] hover:text-[var(--text-color-dark)]">
                       Video demo
                     </div>
-                  </div> */}
+                  </div>
                   <a
                     href="https://tunizme.github.io/todolist/"
                     target="_blank"
